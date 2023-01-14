@@ -1,9 +1,6 @@
 /*********
-  Rui Santos
-  Complete instructions at https://RandomNerdTutorials.com/esp32-cam-projects-ebook/
-  
-  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files.
-  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+Select Proper CAM Module
+SET your WIFI SSID and PW
 *********/
 
 #include "esp_camera.h"
@@ -17,12 +14,12 @@
 #include "esp_http_server.h"
 
 // Replace with your network credentials
-const char* ssid = "Dialog 4G";
-const char* password = "sema9454";
+const char* ssid = "Dialog 4G"; // SET Your SSID
+const char* password = "sema9454"; // SET Your PW
 
 #define PART_BOUNDARY "123456789000000000000987654321"
 
-#define CAMERA_MODEL_AI_THINKER
+#define CAMERA_MODEL_AI_THINKER  // I'm Using AI THINKER Module
 //#define CAMERA_MODEL_M5STACK_PSRAM
 //#define CAMERA_MODEL_M5STACK_WITHOUT_PSRAM
 //#define CAMERA_MODEL_M5STACK_PSRAM_B
